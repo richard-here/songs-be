@@ -1,0 +1,29 @@
+### Get all songs
+GET http://localhost:3000/songs
+
+### Get a song by ID
+GET http://localhost:3000/songs/{id}
+
+### Update a song by ID
+PUT http://localhost:3000/songs/{id}
+Content-Type: application/json
+
+{
+  "title": "New Song Title",
+  "artist": "New Artist",
+  "duration": 180
+}
+
+### Delete a song by ID
+DELETE http://localhost:3000/songs/{id}
+
+### Create a new song
+POST http://localhost:3000/songs
+Content-Type: application/json
+
+{
+  "title": "New Song",
+  "artists": ["sigla"],
+  "releasedDate": "2022-12-29",
+  "duration": "02:34"
+}
