@@ -1,5 +1,5 @@
 ### Get all songs
-GET http://localhost:3000/songs
+GET http://localhost:3000/songs?page=1&limit=2
 
 ### Get a song by ID
 GET http://localhost:3000/songs/1
@@ -20,9 +20,9 @@ POST http://localhost:3000/songs
 Content-Type: application/json
 
 {
-  "title": "lasting lover 2",
+  "title": "lasting lover 5",
   "artists": ["Siagla", "Martin", "John"],
-  "releasedDate": "2022-09-29",
+  "releasedDate": "2023-10-29",
   "duration": "02:34",
   "lyrics": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
 }
