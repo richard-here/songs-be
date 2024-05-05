@@ -29,10 +29,10 @@ export class SongsController {
 
   @Put(':id')
   update(
-    @Param('id', ParseIntPipe)
+    @Param('id', ParseIntPipe) id: number,
     @Body() updateSongDTO: UpdateSongDTO,
-    id: number,
   ) : Promise<UpdateResult> {
+    console.log(id);
     return this.songsService.update(id, updateSongDTO);
   }
   

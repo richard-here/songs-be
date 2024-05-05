@@ -2,28 +2,27 @@
 GET http://localhost:3000/songs
 
 ### Get a song by ID
-GET http://localhost:3000/songs/{id}
+GET http://localhost:3000/songs/1
 
 ### Update a song by ID
-PUT http://localhost:3000/songs/{id}
+PUT http://localhost:3000/songs/1
 Content-Type: application/json
 
 {
-  "title": "New Song Title",
-  "artist": "New Artist",
-  "duration": 180
+  "title": "lasting lover 2 updated title"
 }
 
 ### Delete a song by ID
-DELETE http://localhost:3000/songs/{id}
+DELETE http://localhost:3000/songs/1
 
 ### Create a new song
 POST http://localhost:3000/songs
 Content-Type: application/json
 
 {
-  "title": "New Song",
-  "artists": ["sigla"],
-  "releasedDate": "2022-12-29",
-  "duration": "02:34"
+  "title": "lasting lover 2",
+  "artists": ["Siagla", "Martin", "John"],
+  "releasedDate": "2022-09-29",
+  "duration": "02:34",
+  "lyrics": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
 }

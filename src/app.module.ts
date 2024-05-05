@@ -12,7 +12,7 @@ import { Song } from './songs/song.entity';
   imports: [
     TypeOrmModule.forRoot({
       type: 'postgres',
-      database: 'songs-be',
+      database: 'postgres',
       host: 'localhost',
       port: 5432,
       username: 'postgres',
