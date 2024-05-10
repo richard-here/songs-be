@@ -37,3 +37,16 @@ Content-Type: application/json
   "email": "johndoe@gmail.com",
   "password": "12345678"
 }
+
+### Login
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+  "email": "johndoe@gmail.com",
+  "password": "12345678"
+}
+
+### Profile
+GET http://localhost:3000/profile
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImpvaG5kb2VAZ21haWwuY29tIiwic3ViIjo0LCJpYXQiOjE3MTUzNTA1OTcsImV4cCI6MTcxNTQzNjk5N30.NoBeHoYZt2VR-QDP9ziQmjWA7odM4G5z65pi8p02c3g
