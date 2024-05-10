@@ -2,7 +2,7 @@
 GET http://localhost:3000/songs?page=1&limit=2
 
 ### Get a song by ID
-GET http://localhost:3000/songs/1
+GET http://localhost:3000/songs/7
 
 ### Update a song by ID
 PUT http://localhost:3000/songs/1
@@ -20,8 +20,8 @@ POST http://localhost:3000/songs
 Content-Type: application/json
 
 {
-  "title": "lasting lover 5",
-  "artists": ["Siagla", "Martin", "John"],
+  "title": "You for Me",
+  "artists": [1, 2],
   "releasedDate": "2023-10-29",
   "duration": "02:34",
   "lyrics": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
