@@ -26,3 +26,14 @@ Content-Type: application/json
   "duration": "02:34",
   "lyrics": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
 }
+
+### Signup User
+POST http://localhost:3000/auth/signup
+Content-Type: application/json
+
+{
+  "firstName": "John",
+  "lastName": "Doe",
+  "email": "johndoe@gmail.com",
+  "password": "12345678"
+}
