@@ -18,9 +18,10 @@ DELETE http://localhost:3000/songs/1
 ### Create a new song
 POST http://localhost:3000/songs
 Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImpvaG5kb2UyQGdtYWlsLmNvbSIsInVzZXJJZCI6NiwiYXJ0aXN0SWQiOjMsImlhdCI6MTcxNTM1MzY4MCwiZXhwIjoxNzE1NDQwMDgwfQ.dErhy34JS8QmsSsz0Otz2USU9RUYmPe3zTEL7v-4sig
 
 {
-  "title": "You for Me",
+  "title": "You for Me 2",
   "artists": [1, 2],
   "releasedDate": "2023-10-29",
   "duration": "02:34",
@@ -33,8 +34,8 @@ Content-Type: application/json
 
 {
   "firstName": "John",
-  "lastName": "Doe",
-  "email": "johndoe@gmail.com",
+  "lastName": "Doe 2",
+  "email": "johndoe2@gmail.com",
   "password": "12345678"
 }
 
@@ -43,10 +44,10 @@ POST http://localhost:3000/auth/login
 Content-Type: application/json
 
 {
-  "email": "johndoe@gmail.com",
+  "email": "johndoe2@gmail.com",
   "password": "12345678"
 }
 
 ### Profile
 GET http://localhost:3000/profile
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImpvaG5kb2VAZ21haWwuY29tIiwic3ViIjo0LCJpYXQiOjE3MTUzNTA1OTcsImV4cCI6MTcxNTQzNjk5N30.NoBeHoYZt2VR-QDP9ziQmjWA7odM4G5z65pi8p02c3g
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImpvaG5kb2UyQGdtYWlsLmNvbSIsInVzZXJJZCI6NiwiYXJ0aXN0SWQiOjMsImlhdCI6MTcxNTM1MzY4MCwiZXhwIjoxNzE1NDQwMDgwfQ.dErhy34JS8QmsSsz0Otz2USU9RUYmPe3zTEL7v-4sig
