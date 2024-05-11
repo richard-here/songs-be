@@ -33,9 +33,9 @@ POST http://localhost:3000/auth/signup
 Content-Type: application/json
 
 {
-  "firstName": "John",
-  "lastName": "Doe 2",
-  "email": "johndoe2@gmail.com",
+  "firstName": "Sam",
+  "lastName": "Alt",
+  "email": "samalt@gmail.com",
   "password": "12345678"
 }
 
@@ -68,3 +68,8 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImpvaG5kb
 {
   "token": "713543"
 }
+
+
+### Auth Profile
+GET http://localhost:3000/auth/profile
+Authorization: Bearer e0b87bd2-c4cd-4876-955f-6f7a8dd2de97
