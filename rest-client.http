@@ -51,3 +51,20 @@ Content-Type: application/json
 ### Profile
 GET http://localhost:3000/profile
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImpvaG5kb2UyQGdtYWlsLmNvbSIsInVzZXJJZCI6NiwiYXJ0aXN0SWQiOjMsImlhdCI6MTcxNTM1MzY4MCwiZXhwIjoxNzE1NDQwMDgwfQ.dErhy34JS8QmsSsz0Otz2USU9RUYmPe3zTEL7v-4sig
+
+### Enable 2FA
+POST http://localhost:3000/auth/enable-2fa
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImpvaG5kb2UyQGdtYWlsLmNvbSIsInVzZXJJZCI6NiwiYXJ0aXN0SWQiOjMsImlhdCI6MTcxNTQyNjU1NiwiZXhwIjoxNzE1NTEyOTU2fQ.Rs09xn5Lh5GkMRTMcE-kolmMrr5OUtjXNrVSrnqOrIE
+
+### Disable 2FA
+POST http://localhost:3000/auth/disable-2fa
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImpvaG5kb2UyQGdtYWlsLmNvbSIsInVzZXJJZCI6NiwiYXJ0aXN0SWQiOjMsImlhdCI6MTcxNTQyNjU1NiwiZXhwIjoxNzE1NTEyOTU2fQ.Rs09xn5Lh5GkMRTMcE-kolmMrr5OUtjXNrVSrnqOrIE
+
+### Verify 2FA
+POST http://localhost:3000/auth/validate-2fa
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImpvaG5kb2UyQGdtYWlsLmNvbSIsInVzZXJJZCI6NiwiYXJ0aXN0SWQiOjMsImlhdCI6MTcxNTQyNjU1NiwiZXhwIjoxNzE1NTEyOTU2fQ.Rs09xn5Lh5GkMRTMcE-kolmMrr5OUtjXNrVSrnqOrIE
+
+{
+  "token": "713543"
+}
