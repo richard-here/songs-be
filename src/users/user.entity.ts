@@ -27,4 +27,7 @@ export class User {
 
   @Column()
   apiKey: string;
+
+  @Column()
+  phone: string;
 }
