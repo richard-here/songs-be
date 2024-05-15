@@ -8,14 +8,21 @@ import { JwtAuthGuard } from './jwt-auth-guard';
 import { Enable2FAType } from './types';
 import { ValidateTokenDTO } from './dto/validate-token.dto';
 import { AuthGuard } from '@nestjs/passport';
+import { ApiOperation, ApiResponse, ApiTags } from '@nestjs/swagger';
 
 @Controller('auth')
+@ApiTags('auth')
 export class AuthController {
   constructor(
     private usersService: UsersService,
     private authService: AuthService
   ) {}
 
+  @ApiOperation({ summary: 'Sign up a new user' })
+  @ApiResponse({
+    status: 201,
+    description: 'It will return the user in the response',
+  })
   @Post('signup')
   signup(
     @Body()
@@ -24,6 +31,11 @@ export class AuthController {
     return this.usersService.create(userDTO);
   }
 
+  @ApiOperation({ summary: 'Login a user' })
+  @ApiResponse({
+    status: 200,
+    description: 'It will return the access_token in the response',
+  })
   @Post('login')
   login(
     @Body()
