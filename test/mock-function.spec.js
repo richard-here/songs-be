@@ -3,7 +3,7 @@ describe('Mock function example', () => {
     const mockFn = jest.fn();
     mockFn.mockReturnValue(3);
     console.log(mockFn());
-    expect(mockFn().toBe(3));
+    expect(mockFn()).toBe(3);
     expect(mockFn.mock.calls.length).toBe(2);
     expect(mockFn).toHaveBeenCalled();
   });
