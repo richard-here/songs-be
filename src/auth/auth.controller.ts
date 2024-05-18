@@ -70,7 +70,6 @@ export class AuthController {
     @Body()
     ValidateTokenDTO: ValidateTokenDTO
   ) : Promise<{ verified: boolean } | { accessToken: string }> {
-    console.log(req.user);
     return this.authService.validateToken(req.user.userId, ValidateTokenDTO.token);
   }
 

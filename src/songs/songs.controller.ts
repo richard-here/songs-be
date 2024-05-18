@@ -14,7 +14,6 @@ export class SongsController {
   @Post()
   @UseGuards(ArtistsJwtAuthGuard)
   create(@Body() createSongDTO: CreateSongDTO, @Request() request) : Promise<Song> {
-    console.log(request.user)
     return this.songsService.create(createSongDTO);
   }
 
@@ -45,7 +44,6 @@ export class SongsController {
     @Param('id', ParseIntPipe) id: number,
     @Body() updateSongDTO: UpdateSongDTO,
   ) : Promise<UpdateResult> {
-    console.log(id);
     return this.songsService.update(id, updateSongDTO);
   }
   
