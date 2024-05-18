@@ -6,7 +6,10 @@ import {
 import { Artist } from 'src/artists/artist.entity';
 import { Song } from 'src/songs/song.entity';
 import { User } from 'src/users/user.entity';
-import { DataSource, DataSourceOptions, Entity } from 'typeorm';
+import { DataSource, DataSourceOptions } from 'typeorm';
+
+// Load the configuration from the .env file
+require('dotenv').config();
 
 export const typeOrmAsyncConfig: TypeOrmModuleAsyncOptions = {
   imports: [ConfigModule],
@@ -34,7 +37,7 @@ export const dataSourceOptions: DataSourceOptions = {
   port: parseInt(process.env.DB_PORT),
   username: process.env.DB_USERNAME,
   database: process.env.DB_NAME,
-  password: process.env.DB_PASSWORD,
+  password: process.env.PASSWORD,
   entities: ['dist/**/*.entity.js'],
   synchronize: false,
   migrations: ['dist/db/migrations/*.js'],
