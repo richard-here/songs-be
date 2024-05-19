@@ -5,7 +5,7 @@ import { Song } from './song.entity';
 import { DeleteResult, UpdateResult } from 'typeorm';
 import { UpdateSongDTO } from './dto/update-song.dto';
 import { Pagination } from 'nestjs-typeorm-paginate';
-import { ArtistsJwtAuthGuard } from 'src/auth/artists-jwt-auth-guard';
+import { ArtistsJwtAuthGuard } from '../auth/artists-jwt-auth-guard';
 
 @Controller('songs')
 export class SongsController {
